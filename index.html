@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scape=1.0"> -->
+	<title>Beautiful manicure</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="css/stylesheet1.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script>
+    $(document).ready(function() {
+        var RBStickyNav = $('.RBsticky-element').offset().top;
+        var stickyNav = function() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 130) {
+                $('.RBsticky-element').addClass('RBSticky' );
+            } else {
+                $('.RBsticky-element').removeClass('RBSticky');
+            }
+        };
+        stickyNav();
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+</script>
+</head>
+<body>
+	<div class="wrapper">
+
+			<!-- section with menu -->
+
+		<section class="section">
+			<header class="header">
+
+			<!-- menu for mobile -->
+			<nav class="nav">
+				<ul>
+				    <li class="current"><a href="#">меню</a></li>
+				    <li><a href="#">о нас</a></li>
+				    <li><a href="#">отзывы</a></li>
+				    <li><a href="#">услуги</a></li>
+				    <li><a href="#">цены</a></li>
+				    <li><a href="#">связаться</a></li>
+				    <li><a href="#">почему мы</a></li>
+				</ul>
+			</nav>
+
+			<!-- end menu -->
+
+			<div class="first-div">
+				<div class="block-menu">
+					<ul id="menu" class="RBsticky-element">
+					 	<li id="menu__list"><a id="menu__list__link" href="#">о нас</a></li>
+					 	<li id="menu__list"><a id="menu__list__link" href="#">отзывы</a></li>
+					 	<li id="menu__list"><a id="menu__list__link" href="#">услуги</a></li>
+					 	<li id="menu__list"><a id="menu__list__link" href="#">цены</a></li>
+					 	<li id="menu__list"><a id="menu__list__link" href="#">связаться</a></li>
+					 	<li id="menu__list"><a id="menu__list__link" href="#">почему мы</a></li>
+					 	<li id="menu__list"><a id="menu__list__link__color" href="#">заявка </a></li>
+					</ul> 
+				</div>
+				</div>
+			</header>
+				<div>
+					<h1 class="main-header">КрасивО</h1>
+					<p class="sometext">маникюрный салон у вас дома</p>
+					<div class="dashed-line">
+						<img src="img/dashed-line.png" alt="line" width="80%">
+					</div>
+					<h2 class="another-text">
+						Закажите маникюрный салон к себе на дом <br> в удобное для вас время
+					</h2>
+					<div class="button">
+						<button class="order">Заказать</button>
+					</div>
+				</div>
+		</section>
+		
+			<!-- block with information about us -->
+
+			<section class="our-differences">
+				<div class="block-with-text">
+					<h2 class="somethingHeader">чем мы отличаемся</h2>
+					<h3 class="somethingHeader2">от других представителей ногтевого сервиса</h3>
+					<div class="somelist">
+						<ul>
+							<li class="heart">Проверенные мастера</li>
+							<li class="house">Бесплатный выезд на дом</li>
+							<li class="grafi-heart">Класические оттенки и сезонные колекции<!-- </span> --></li>
+							<li class="scissor">Специальные инструменты и 
+							одноразовые материалы<!-- </span> --></li>
+							<li class="letter">Оплата картами</li>
+						</ul>
+					</div>
+				</div>
+				<div class="block-with-bg">
+					<h2 class="manicure-price">маникюр <br> с покрытием <br> от 500 гривен</h2>
+				</div>	
+			</section>
+
+			<!-- block with aplication -->
+
+			<section class="application">
+				<div class="someapplication">
+					<div class="someblock">
+						<h2 class="h2">Оставьте заявку</h2>
+						<p class="textservice">
+							И мы свяжемся с вами как можно скорее чтобы вы получили качественную услугу.
+						</p>
+						<div class="inputs">
+							<div class="input-name">
+								<input type="text" name="name" id="" placeholder="Имя">
+							</div>
+							<div class="input-phone">
+								<input type="text" name="phone" id="" placeholder="Телефон">
+							</div>
+							<div class="input-email">
+								<input type="email" name="email" id="" placeholder="Email">
+							</div>
+							<div class="input-submit">
+								<input type="submit" value="Оставить заявку">
+							</div>
+						</div>
+					</div>	
+				</div>
+			</section>
+
+			<!-- block with reviews -->
+
+			<section class="reviews">
+				<div class="container">
+					<div class="swiper-container">
+						<h3>Отзывы</h3>
+				        <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+									<span>Антонина</span>
+									<img src="img/reviews-1.jpg" alt="">
+									<span>29 лет</span>
+									<p>Дарья – очень опытный <br> мастер. Мне всё понравилось, <br> хотя маникюр она выполняла <br> чуть дольше заявленного. Но <br> зато всё сделано хорошо. <br> Спасибо.</p>
+								</div>
+							<div class="swiper-slide">
+								<span>Антонина</span>
+								<img src="img/reviews-1.jpg" alt="">
+								<span>29 лет</span>
+								<p>Дарья – очень опытный <br> мастер. Мне всё понравилось, <br> хотя маникюр она выполняла <br> чуть дольше заявленного. Но <br> зато всё сделано хорошо. <br> Спасибо.</p>
+							</div>
+							<div class="swiper-slide">
+								<span>Антонина</span>
+								<img src="img/reviews-1.jpg" alt="">
+								<span>29 лет</span>
+								<p>Дарья – очень опытный <br> мастер. Мне всё понравилось, <br> хотя маникюр она выполняла <br> чуть дольше заявленного. Но <br> зато всё сделано хорошо. <br> Спасибо.</p>
+							</div>
+							<div class="swiper-slide">
+								<span>Антонина</span>
+								<img src="img/reviews-1.jpg" alt="">
+								<span>29 лет</span>
+								<p>Дарья – очень опытный <br> мастер. Мне всё понравилось, <br> хотя маникюр она выполняла <br> чуть дольше заявленного. Но <br> зато всё сделано хорошо. <br> Спасибо.</p>
+							</div>
+				        </div>
+				        <!-- Add Pagination -->
+				        <div class="swiper-pagination"></div>
+				    </div>
+
+				</div>
+			</section>
+			<section class="services-and-prices">
+				<div class="some-container">
+
+						<!-- up-text block -->
+
+					 <div class="up-text">
+					 		<h3 class="h3">
+					 			услуги и цены
+					 		</h3>
+					 		<p class="some-text">Наша команда профессионлов с радостью сделает  для вас лучший в мире маникюр, педикюр, или все вместе. </p>
+					 		<p class="some-text">Вы останетесь очень довольны!</p>
+					 </div>	
+
+						<!-- div with three block -->
+
+					<div  class="some-second-block" >
+					 <!-- first -->
+					 	<div class="first-block">
+					 		<div class="first-block-bg"></div>
+					 		<h4 class="h4">педикюр</h4>
+					 			<div class="first-block-line-left" >Покрытие <span>лак</span> </div>
+					 			<div class="first-block-line-right" >Покрытие <span>гель-лак</span> </div>
+					 			<div class="clear"></div>
+						 		<div class="first-block-price-left"> 720 <span>грн</span> </div>
+						 		<div class="first-block-price-right">820 <span>грн</span> </div>
+					 	</div>
+					 	<div class="second-block">
+					 		<div class="second-block-bg"></div>
+					 		<h4 class="h4big">маникюр</h4>
+						 		<div class="second-block-line-left" >Покрытие <span>лак</span> </div>
+						 		<div class="second-block-line-right" >Покрытие <span>гель-лак</span></div>
+						 		<div class="second-block-price-left">500 <span>грн</span> </div>
+						 		<div class="second-block-price-right">730 <span>грн</span> </div>	
+					 	</div>
+					 	<div class="third-block">
+					 		<div class="third-block-bg"></div>
+					 		<h4 class="h4">маникюр и педикюр</h4>
+						 		<div class="third-block-line-left" >Покрытие <span>лак</span> </div>
+						 		<div class="third-block-line-right" >Покрытие <span>гель-лак</span></div>	
+					 			<div class="third-block-price-left">1020 <span>грн</span> </div>
+					 			<div class="third-block-price-right">1350 <span>грн</span> </div>
+					 	</div>
+					</div>
+				</div>
+			</section>
+			<div class="clear"></div>
+
+			<!-- block with information about our convinient -->
+
+			<section class="why-convenient">
+				<div class="why-convenient-header">
+					<h4 class="h4header">почему с нами удобно</h4>
+				</div>
+					<div class="block-left">
+						<div>
+							<p>&nbsp&nbsp&nbsp&nbspманикюр <br> с покрытием &nbsp&nbsp&nbsp&nbspот 500 грн</p>
+						</div>
+					</div>
+					<!-- <div class="clear"></div> -->
+					<div class="block-right">
+						<p class="somemytext">&nbsp С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание форм развития. Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа дальнейших направлений развития. Повседневная практика показывает, что новая модель организационной деятельности требуют определения и уточнения соответствующий условий активизации.</p>
+						<p>&nbspРавным образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание модели развития. </p>
+						<p class="work-time">Мы работаем с <b>8.00</b> до <b>24.00</b></p>
+						<p class="necessary-tools">Мастер приезжает со <strong>всеми</strong>		 необходимыми <br> для работы инструментами</p>
+						<p class="payment">Оплата наличными после выполнения заказа</p>
+					</div>
+				<div class="clear-down"></div>
+			</section>
+
+			<!-- block with second application -->
+
+			<section class="application" id="down" >
+				<div class="someapplication">
+					<div class="someblock">
+						<h2 class="h2" id="h2">Оставьте заявку</h2>
+						<p class="textservice mod" id="mod">
+							И мы свяжемся с вами как можно скорее чтобы вы получили качественную услугу.
+						</p>
+						<div class="inputs">
+							<div class="input-name">
+								<input class="down-input" type="text" name="name" id="" placeholder="Имя">
+							</div>
+							<div class="input-phone">
+								<input class="down-input" type="text" name="phone" id="" placeholder="Телефон">
+							</div>
+							<div class="input-email">
+								<input class="down-input" type="email" name="email" id="" placeholder="Email">
+							</div>
+							<div class="input-submit down">
+								<input type="submit" value="Оставить заявку">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="clear"></div>
+
+			<!-- footer block -->
+
+			<footer class="footer">
+				<div class="block-block-menu">
+				<div class="block-menu-down">
+					<ul  class="downmenu" >
+					 	<li class="list-item" ><a class="mylink1" href="#">о нас</a></li>
+					 	<li class="list-item" ><a class="mylink2" href="#">отзывы</a></li>
+					 	<li class="list-item" ><a class="mylink3" href="#">услуги и цены</a></li>
+					 	<li class="list-item" ><a class="mylink4" href="#">связаться</a></li>
+					 	<li class="list-item" ><a class="mylink5" href="#">почему мы</a></li>
+					 	<li class="list-item" ><a  href="#">заявка </a></li>
+					</ul> 
+				</div>
+				</div>
+				<div class="block-with-contacts">
+					<span class="firstspan">&copy 2016 Красиво</span>
+					<div class="secondspan">(066) <span>682 75 13</span></div>
+					<span class="thirdspan">Разработано: <a href="">slovostudio.com</a></span>
+				</div>
+			</footer>
+		</div>	
+		
+	</div>
+	<!-- Swiper JS -->
+	<script src="js/swiper.js"></script>
+
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
+</body>
+</html>
